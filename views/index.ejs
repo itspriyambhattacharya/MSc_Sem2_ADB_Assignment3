@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks Display App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-dark text-white">
+    <h1 class="text-center mt-3 mb-5">Marks Submission Form</h1>
+    <div class="container shadow-lg">
+      <form action="./index.html" method="post">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Priyam Bhattacharya"
+            required
+          />
+          <label for="name">Name of Student</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="m1"
+            name="m1"
+            placeholder="78"
+            required
+          />
+          <label for="m1">Marks of Subject 1</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="m2"
+            name="m2"
+            placeholder="43"
+            required
+          />
+          <label for="m2">Marks of Subject 2</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="m3"
+            name="m3"
+            placeholder="87"
+            required
+          />
+          <label for="m3">Marks of Subject 3</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="m4"
+            name="m4"
+            placeholder="96"
+            required
+          />
+          <label for="m4">Marks of Subject 4</label>
+        </div>
+        <div class="mb-3 d-flex justify-content-center align-items-center">
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
