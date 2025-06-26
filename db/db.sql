@@ -7,3 +7,13 @@ marks1 INT NOT NULL,
 marks2 INT NOT NULL,
 marks3 INT NOT NULL
 );
+
+TRUNCATE TABLE marks;
+ALTER TABLE marks
+ADD COLUMN marks4 INT NOT NULL;
+
+INSERT INTO marks(sname, marks1, marks2, marks3, marks4) VALUES ("Priyam", 89, 90, 78, 84);
+
+DESC marks;
+
+SELECT * FROM marks;
