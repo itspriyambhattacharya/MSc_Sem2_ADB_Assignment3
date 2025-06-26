@@ -25,6 +25,7 @@ route.post("/", (req, res) => {
       return res.status(500).send("Record not inserted");
     }
     console.log("Record inserted successfully");
+    return res.status(200).send("Record inserted successfully");
   });
 });
 
