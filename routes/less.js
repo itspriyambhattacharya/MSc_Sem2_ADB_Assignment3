@@ -4,7 +4,7 @@ const pool = require("../db");
 
 // middleware
 route.use((req, res, next) => {
-  console.log("More than 90% middleware");
+  console.log("Less than 40% middleware");
   next();
 });
 
