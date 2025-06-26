@@ -9,6 +9,9 @@ app.use(express.urlencoded({ extended: true }));
 const idx = require("./routes/index");
 app.use("/", idx);
 
+const more = require("./routes/more");
+app.use("/more", more);
+
 app.listen(port, () => {
   console.log(`App is listening on port ${port}`);
 });
