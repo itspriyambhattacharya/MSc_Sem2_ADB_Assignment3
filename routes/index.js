@@ -1,5 +1,6 @@
 const express = require("express");
 const route = express.Router();
+const pool = require("../db");
 
 // middleware
 route.use((req, res, next) => {
