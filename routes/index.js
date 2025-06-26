@@ -13,6 +13,7 @@ route.get("/", (req, res) => {
 
 route.post("/", (req, res) => {
   const { name, m1, m2, m3, m4 } = req.body;
+  const sql = `INSERT INTO marks(sname, marks1, marks2, marks3) VALUES (?, ?, ?, ?);`;
 });
 
 module.exports = route;
