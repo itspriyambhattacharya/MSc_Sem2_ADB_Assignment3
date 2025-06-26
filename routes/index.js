@@ -9,7 +9,17 @@ route.use((req, res, next) => {
 });
 
 route.get("/", (req, res) => {
-  res.render("index");
+  const sql = `SELECT * FROM marks`;
+  pool.query(sql, (err, results, fields) => {
+    if (err) {
+      console.error(
+        "Insertion failed due to the following error: ",
+        err.message
+      );
+      return res.status(500).send("Record not inserted");
+    }
+    res.render("index", { obj: results });
+  });
 });
 
 route.post("/", (req, res) => {
