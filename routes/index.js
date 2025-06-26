@@ -12,10 +12,7 @@ route.get("/", (req, res) => {
   const sql = `SELECT * FROM marks`;
   pool.query(sql, (err, results, fields) => {
     if (err) {
-      console.error(
-        "Insertion failed due to the following error: ",
-        err.message
-      );
+      console.error("Fetched failed due to the following error: ", err.message);
       return res.status(500).send("Record not fetched");
     }
     res.render("index", { obj: results });
