@@ -1,0 +1,25 @@
+{
+  "name": "a3",
+  "version": "1.0.0",
+  "description": "ADM assignment 3",
+  "homepage": "https://github.com/itspriyambhattacharya/MSc_Sem2_ADB_Assignment3#readme",
+  "bugs": {
+    "url": "https://github.com/itspriyambhattacharya/MSc_Sem2_ADB_Assignment3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itspriyambhattacharya/MSc_Sem2_ADB_Assignment3.git"
+  },
+  "license": "MIT",
+  "author": "Priyam Bhattacharya",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}
